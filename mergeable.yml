@@ -5,6 +5,8 @@ mergeable:
   pull_requests:
     # Minimum of 5 approvals is needed.
     approvals:
+        min: 5
+          message: 'Custom message...'
         required:
           reviewers: [ nereaDM ]   # list of github usernames required to review
           message: 'Custom message...'		
