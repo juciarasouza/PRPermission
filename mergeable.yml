@@ -4,16 +4,13 @@
 mergeable:
   pull_requests:
     # Minimum of 5 approvals is needed.
-    approvals: 5
-
+    approvals:
+        required:
+          reviewers: [ nereaDM ]   # list of github usernames required to review
+          message: 'Custom message...'		
+       
     # Regular expression to be tested on the title. Not mergeable when true.  
     title: 'wip'
-
-    # Only mergeable when milestone is as specified below.
-    milestone: 'version 1'
-
-    # Only mergeable when Project is as specified below
-    project: 'Alpha'
 
     # exclude any of the mergeable validation above. A comma separated list. For example, the following will exclude validations for approvals and label.
     exclude: 'approvals, label'
