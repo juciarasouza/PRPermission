@@ -10,12 +10,7 @@
         begins_with:
           match: '(feat)|(doc)|(fix)'
           message: 'Custom message...'
-
-
       label:
-        must_include:
-          regex: `^\\(feat\\)|^\\(doc\\)|^\\(fix\\)`
-          message: `Title must have prefixes for the following: (feat), (doc), (fix)`
-        must_exclude:
+         must_exclude:
           regex: 'wip'
           message: 'Custom message. This PR is work in progress.'
