@@ -4,9 +4,6 @@
   mergeable:
     pull_requests:
       title:
-        must_include:
-          regex: `^\\(feat\\)|^\\(doc\\)|^\\(fix\\)`
-          message: `Title must have prefixes for the following: (feat), (doc), (fix)`
         must_exclude:
           regex: 'wip'
           message: 'This PR is work in progress.'
