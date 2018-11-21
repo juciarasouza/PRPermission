@@ -1,15 +1,24 @@
-##############################
-# Example Simple Settings
-#############################
-mergeable:
-  pull_requests:
-    # Minimum of 5 approvals is needed.
-    approvals:
-        min: 5
+ ##############################
+  # example Advanced Settings
+  ##############################
+  mergeable:
+    pull_requests:
+      title:
+        must_include:
+          regex: `^\\(feat\\)|^\\(doc\\)|^\\(fix\\)`
+          message: `Title must have prefixes for the following: (feat), (doc), (fix)`
+        must_exclude:
+          regex: 'wip'
+          message: 'This PR is work in progress.'
+        begins_with:
+          match: '(feat)|(doc)|(fix)'
           message: 'Custom message...'
-        required:
-          reviewers: [ nereaDM ]   # list of github usernames required to review
-          message: 'Custom message...'		
-       
-    # Regular expression to be tested on the title. Not mergeable when true.  
-    title: 'wip'
+
+
+      label:
+        must_include:
+          regex: `^\\(feat\\)|^\\(doc\\)|^\\(fix\\)`
+          message: `Title must have prefixes for the following: (feat), (doc), (fix)`
+        must_exclude:
+          regex: 'wip'
+          message: 'Custom message. This PR is work in progress.'
