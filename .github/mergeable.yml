@@ -1,16 +1,11 @@
- ##############################
-  # example Advanced Settings
-  ##############################
-  mergeable:
+##############################
+# example Advanced Settings
+##############################
+mergeable:
     pull_requests:
-      title:
-        must_exclude:
-          regex: 'wip'
-          message: 'This PR is work in progress.'
-        begins_with:
-          match: '(feat)|(doc)|(fix)'
-          message: 'Custom message...'
-      label:
-         must_exclude:
-          regex: 'wip'
-          message: 'Custom message. This PR is work in progress.'
+        title:
+            must_exclude: {regex: wip, message: 'This PR is work in progress.'}
+        label:
+            must_exclude: {regex: wip, message: 'Custom message. This PR is work in progress.'}
+        description:
+            must_exclude: {regex: WIP, message: 'Custom message. wip'}
