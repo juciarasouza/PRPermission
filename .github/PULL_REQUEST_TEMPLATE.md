@@ -1,8 +1,8 @@
 [WIP] <<when the work is done, remove this line>>
 
-**Before the merge, please check the items bellow out:**
+**Before request a review, please check the items bellow out:**
 
 - [ ] Connect this pull request with an existing issue
-- [ ] The issue is as "Approved" on the board
-- [ ] Unit tests were done
+- [ ] The original issue is as "Approved" on the board (If it is on PO or PO+QA don't merge yet)
+- [ ] Unit tests were implemented
 
